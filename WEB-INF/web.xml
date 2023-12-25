@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="C:\Users\himak\OneDrive\Desktop\j\xmldirectory"
+         version="3.1">
+       
+       
+       
+    <!-- Admin -->  
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>customerser.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Customer_register</servlet-name>
+		<servlet-class>customerser.Customersignup</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Customer_register</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Customer_update</servlet-name>
+		<servlet-class>customerser.updateCustomServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Customer_update</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Delete_update</servlet-name>
+		<servlet-class>customerser.deleteCustomServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Delete_update</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!-- Offers !!! -->
+	<servlet>
+		<servlet-name>Add_offers</servlet-name>
+		<servlet-class>offerser.Offeraddservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Add_offers</servlet-name>
+		<url-pattern>/addo</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>offerdetails</servlet-name>
+		<servlet-class>offerser.Offerdisplayservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>offerdetails</servlet-name>
+		<url-pattern>/oprint</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Updatableoffer</servlet-name>
+		<servlet-class>offerser.Offersupdate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Updatableoffer</servlet-name>
+		<url-pattern>/updateoffer</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Deletableoffer</servlet-name>
+		<servlet-class>offerser.Offersdelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Deletableoffer</servlet-name>
+		<url-pattern>/deleteoffer</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>offerfindupdate</servlet-name>
+		<servlet-class>offerser.Offerfindservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>offerfindupdate</servlet-name>
+		<url-pattern>/findofferupdate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>offerfinddelete</servlet-name>
+		<servlet-class>offerser.offersfindServlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>offerfinddelete</servlet-name>
+		<url-pattern>/findofferdelete</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!-- Policy -->
+	<servlet>
+		<servlet-name>Add_policies</servlet-name>
+		<servlet-class>policyser.Policyaddservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Add_policies</servlet-name>
+		<url-pattern>/addo1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>policydetails</servlet-name>
+		<servlet-class>policyser.Policydisplayservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>policydetails</servlet-name>
+		<url-pattern>/pprint</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Updatablepolicy</servlet-name>
+		<servlet-class>policyser.Policyupdate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Updatablepolicy</servlet-name>
+		<url-pattern>/updatepolicy</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Deletablepolicy</servlet-name>
+		<servlet-class>policyser.Policydelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Deletablepolicy</servlet-name>
+		<url-pattern>/deletepolicy</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>policyfindupdate</servlet-name>
+		<servlet-class>policyser.policyfindServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>policyfindupdate</servlet-name>
+		<url-pattern>/pupdate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>policyfinddelete</servlet-name>
+		<servlet-class>policyser.policyfindServlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>policyfinddelete</servlet-name>
+		<url-pattern>/pdelete</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
